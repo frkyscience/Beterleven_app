@@ -4,7 +4,6 @@ body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-attachment: fixed;
-
 }
 
 .navbar {
@@ -16,16 +15,12 @@ body {
     color: white;
 }
 
-
 #menuToggle {
     display: block;
     position: relative;
     top: 50px;
     left: 50px;
-
-
     z-index: 1;
-
     -webkit-user-select: none;
     user-select: none;
 }
@@ -33,14 +28,12 @@ body {
 #menuToggle a {
     text-decoration: none;
     color: #232323;
-
     transition: color 0.5s ease;
 }
 
 #menuToggle a:hover {
     color: #b3b1b1;
 }
-
 
 #menuToggle input {
     display: block;
@@ -49,15 +42,11 @@ body {
     position: absolute;
     top: -7px;
     left: -5px;
-
     cursor: pointer;
-
     opacity: 0;
     z-index: 2;
-
     -webkit-touch-callout: none;
 }
-
 
 #menuToggle span {
     display: block;
@@ -65,17 +54,11 @@ body {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-
     background: #bbbbbb;
     border-radius: 3px;
-
     z-index: 1;
-
     transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -85,7 +68,6 @@ body {
 #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
-
 
 #menuToggle input:checked~span {
     opacity: 1;
@@ -101,7 +83,6 @@ body {
 #menuToggle input:checked~span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
-
 
 #menu {
     position: absolute;
@@ -123,7 +104,6 @@ body {
     font-size: 22px;
 }
 
-
 #menuToggle input:checked~ul {
     transform: none;
 }
@@ -133,7 +113,6 @@ main {
     align-items: center;
     justify-content: center;
     margin: 10px;
-
 }
 
 .content_main {
@@ -196,6 +175,36 @@ main {
     flex-direction: column;
 }
 
+#mood-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+#notes:focus {
+    border-color: #7536608c;
+}
+
+#notes {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff6b;
+    color: #fff5f5;
+    font-size: 16px;
+    outline: none;
+}
 
 #log-mood-btn {
     padding: 8px 16px;
@@ -211,4 +220,20 @@ main {
 
 #log-mood-btn:hover {
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.option.happy:hover {
+    background-color: #ffd700;
+}
+
+.option.sad:hover {
+    background-color: #4682b4;
+}
+
+.option.stressed:hover {
+    background-color: #ff6347;
+}
+
+.option.relaxed:hover {
+    background-color: #32cd32;
 }

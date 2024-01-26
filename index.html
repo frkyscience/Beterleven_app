@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Beter leven app</title>
 </head>
 
 <body>
@@ -79,10 +80,10 @@
         <div class="mood-entry">
             <label for="mood-select"> Selecteer je Mood:</label>
             <select name="mood-select" id=" mood-select">
-                <option value="blij"> Blij</option>
-                <option value="verdrietig">verdrietig</option>
-                <option value="stressed">ge stressed</option>
-                <option value="relaxed">relaxed</option>
+                <option value="blij" class="happy">Blij</option>
+                <option value="verdrietig" class="sad">Verdrietig</option>
+                <option value="gestressed" class="stressed">Gestrest</option>
+                <option value="relaxed" class="relaxed">Relaxed</option>
             </select>
             <textarea name="" id="notes" placeholder="Voeg aantekeniing toe (optioneel)"></textarea>
             <button id="log-mood-btn">Sla op</button>
