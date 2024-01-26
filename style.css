@@ -180,3 +180,35 @@ main {
 .box button:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
+
+.mood-tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    position: relative;
+}
+
+.mood-entry {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#log-mood-btn {
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px
+}
+
+#log-mood-btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
