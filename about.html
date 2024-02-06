@@ -43,17 +43,21 @@
 
     </div>
 
-    <form id="bmiCalculatorForm">
-        <label for="height"> Hoogte in meters </label>
-        <input type="number" id="height"> <br>
+    <div class="bm-form">
 
-        <label for="weight"> Gewicht</label>
-        <input type="number" id="weight"> <br>
-        <button type="submit">Bereken BMI</button>
+        <form id="bmiCalculatorForm">
+            <label for="height"> Hoogte in meters </label>
+            <input type="number" id="height" step="0.01" required> <br>
 
-    </form>
-    <div id="bmiResult"></div>
+            <label for="weight"> Gewicht</label>
+            <input type="number" id="weight" step="0.01" required> <br>
+            <button type="submit">Bereken BMI</button>
 
+        </form>
+        <div id='bmiResultContainer'>
+            <div id="bmiResult"></div>
+        </div>
+    </div>
 </body>
 
 </html>

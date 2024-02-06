@@ -220,3 +220,14 @@ main {
     background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
 }
+
+#bmiResultContainer {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#bmiResult {
+    background-color: transparent;
+}
