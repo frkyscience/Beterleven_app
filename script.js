@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
         } if (bmi > 18.5 && bmi < 25) {
             bmiResultContainer.style.backgroundColor = 'green';
             bmiResultContainer.style.borderColor = 'darkgreen';
+        } if (bmi > 25) {
+            bmiResultContainer.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+            bmiResultContainer.style.borderColor = 'red';
+        } else {
+            bmiResultContainer.style.backgroundColor = 'none';
+            bmiResultContainer.style.border = 'none';
         }
     });
 
