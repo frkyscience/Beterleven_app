@@ -1,4 +1,3 @@
-//make sure the script is loaded after the dom content is loaded so that the javascript is working properly
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('bmiCalculatorForm').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -14,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (bmi < 18.5) {
             bmiResultContainer.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
             bmiResultContainer.style.borderColor = 'red';
-        } if (bmi > 18.5 && bmi < 25) {
+        } else if (bmi >= 18.5 && bmi < 25) {
             bmiResultContainer.style.backgroundColor = 'green';
             bmiResultContainer.style.borderColor = 'darkgreen';
-        } if (bmi > 25) {
+        } else if (bmi >= 25) {
             bmiResultContainer.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
             bmiResultContainer.style.borderColor = 'red';
         } else {
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
             bmiResultContainer.style.border = 'none';
         }
     });
-    
 
     function calculateBMI(height, weight) {
         var bmi = weight / (height * height);

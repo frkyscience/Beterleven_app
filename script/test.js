@@ -2,7 +2,6 @@ var height = parseFloat(process.argv[2]);
 var weight = parseFloat(process.argv[3]);
 var age = parseFloat(process.argv[4]);
 var sex = process.argv[5].toLowerCase();
-// hier berekenen we de bmi van een vrouw of man aan de hand van de input 
 
 if (sex === 'men') {
     let BMRMen = 88.362 + (13.7 * weight) + (5 * height) - (6.8 * age);
