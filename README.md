@@ -28,7 +28,7 @@ optie it
 
 ## Contact
 
-Heb je vragen, feedback of suggesties voor de Beter Leven App? Aarzel niet om contact met ons op te nemen via [email protected]
+Heb je vragen, feedback of suggesties voor de Beter Leven App? Aarzel niet om contact met ons op te nemen .
 
 De Beter Leven App is gemaakt door Jesse, Akshay en Melvyn. Dank je wel voor het kiezen van de Beter Leven App. Laten we samen werken aan een gezondere toekomst! 🌟
 
