@@ -8,7 +8,7 @@ body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-attachment: fixed;
-    padding-bottom: 60px;
+    height: 100vh;
 }
 
 .navbar {
@@ -116,30 +116,32 @@ body {
 }
 
 .leaderboard {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     padding: 1em;
-    padding-top: 10em;
 }
 
 .theme-img {
     width: 20em;
     border-radius: 10px;
 }
+
 #heroTable {
     margin: 0;
     padding: 0;
 }
+
 .description {
     display: inline-block;
     text-align: center;
     margin: 1em;
     color: rgb(0, 0, 0);
-    transform: translateY(-5em);
-    margin-top: 20px;
 }
 
 input[type="search"] {
-
     border-radius: 5px;
     border: #6579df 2px solid;
     border-bottom: #667ce7 2px solid;
@@ -178,11 +180,9 @@ table th {
 
 table th,
 table td {
-
     padding: 12px;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    
 }
 
 tbody tr {
@@ -215,13 +215,6 @@ tbody tr:hover td {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-tbody tr td:nth-child(2) p {
-    display: inline-block;
-    transform: translateY(-.5em);
-    padding-left: .5em;
-    text-align: left;
-}
-
 #winner {
     color: gold;
     font-weight: 800;
@@ -250,7 +243,6 @@ tbody tr td:nth-child(2) p {
 
     .description {
         display: block;
-        transform: translateY(0);
     }
 
     table {
