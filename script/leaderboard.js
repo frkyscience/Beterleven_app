@@ -1,4 +1,3 @@
-// search system
 function search() {
     var text = document.getElementById('search_hero').value.toLowerCase();
     const tr = document.getElementsByTagName('tr');
