@@ -8,10 +8,41 @@
     <script src="/script/leaderboard.js" defer></script>
 </head>
 <body>
+
+    <div class="navbar">
+
+        <nav role="navigation">
+
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    </a>
+                    <a href="BMI.html">
+                        <li>BMI calculator</li>
+                    </a>
+                    <a href="info.html">
+                        <li>Info</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+
     <div class="leaderboard">
         <div class="description">
             <h3> Running  leaderboard</h3>
-            <p>Date 02/24/2024</p>
+            <p>Date: <span id="dynamicDate"></span></p>
             <input type="search" placeholder="search" id="search_hero">
             <table id="heroTable">
                 <thead>

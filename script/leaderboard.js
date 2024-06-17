@@ -14,3 +14,18 @@ function search() {
 
 document.getElementById('search_hero').addEventListener('input', search);
 
+// up to date 
+function updateDate() {
+    var currentDate = new Date();
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1;
+    var year = currentDate.getFullYear();
+
+    var formattedDate = day + '/' + month + '/' + year;
+
+    document.getElementById('dynamicDate').innerText = formattedDate;
+}
+
+updateDate();
+
+setInterval(updateDate, 1000);
