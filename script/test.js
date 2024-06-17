@@ -1,7 +1,7 @@
-var height = parseFloat(process.argv[2]);
-var weight = parseFloat(process.argv[3]);
-var age = parseFloat(process.argv[4]);
-var sex = process.argv[5].toLowerCase();
+let height = parseFloat(process.argv[2]);
+let weight = parseFloat(process.argv[3]);
+let age = parseFloat(process.argv[4]);
+let sex = process.argv[5].toLowerCase();
 
 if (sex === 'men') {
     let BMRMen = 88.362 + (13.7 * weight) + (5 * height) - (6.8 * age);
